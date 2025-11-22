@@ -17,7 +17,7 @@ const selfCarePT = document.getElementById('previous-self-care');
 
 let timeFrame = "daily";
 
-function fetchData() { fetch('/data.json').then((response) => {
+function fetchData() { fetch('/data/data.json').then((response) => {
   if(!response.ok) return console.log('Oops! Something went wrong.');
   return response.json(); 
 }).then((data) => { 

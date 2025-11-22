@@ -24,7 +24,7 @@ const labels = {
 
 async function fetchData() {
   try {
-    const response = await fetch('https://github.com/h3cat3/time-tracking-dashboard-main/blob/main/data.json');
+    const response = await fetch('/data.json');
     if (!response.ok) throw new Error('Oops! Something went wrong.');
     const data = await response.json();
     populateDOM(data);

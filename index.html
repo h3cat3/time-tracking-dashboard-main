@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Time tracking dashboard</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+ 
+    <header>
+    <div class="profile">
+      <img  src="images/image-jeremy.png">
+      <h1>Report for
+        <span class="profile-name">Jeremy Robson</span></h1>
+    </div>
+    <div class="continer-btns">
+      <button id="daily-btn">Daily</button>
+      <button id="weekly-btn">Weekly</button>
+      <button id="monthly-btn">Monthly</button>
+    </div>
+    </header>
+
+    <main>
+      <div class=" work">
+        <div class="container">
+          <div class="title">
+            <h2>Work</h2>
+            <img class="ellipsis" src="images/icon-ellipsis.svg">
+          </div>
+          <div class="time">
+            <h3><span id="current-work"></span> hrs</h3>
+            <p class="previous"><span id="previous-work"></span> hrs</p>
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="play">
+        <div class="container">
+          <div class="title">
+            <h2>Play</h2>
+            <img class="ellipsis" src="images/icon-ellipsis.svg">
+          </div>
+          <div class="time">
+            <h3><span id="current-play"></span> hrs</h3>
+          <p class="previous"><span id="previous-play"></span> hrs</p>
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="study">
+        <div class="container">
+          <div class="title">
+            <h2>Study</h2>
+            <img class="ellipsis" src="images/icon-ellipsis.svg">
+          </div>
+          <div class="time">
+            <h3><span id="current-study"></span> hrs</h3>
+            <p class="previous"><span id="previous-study"></span> hrs</p>
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="exercise">
+        <div class="container">
+          <div class="title">
+            <h2>Exercise</h2>
+            <img class="ellipsis" src="images/icon-ellipsis.svg">
+          </div>
+          <div class="time">
+            <h3><span id="current-exercise"></span> hrs</h3>
+            <p class="previous"><span id="previous-exercise"></span> hrs</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="social">
+        <div class="container">
+          <div class="title">
+            <h2>Social</h2>
+            <img class="ellipsis" src="images/icon-ellipsis.svg">
+          </div>
+          <div class="time">
+            <h3><span id="current-social"></span> hrs</h3>
+            <p class="previous"><span id="previous-social"></span> hrs</p>
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="self-care">
+        <div class="container">
+          <div class="title">
+            <h2>Self Care</h2>
+            <img class="ellipsis" src="images/icon-ellipsis.svg">
+          </div>
+          <div class="time">
+            <h3><span id="current-self-care"></span> hrs</h3>
+            <p class="previous"><span id="previous-self-care"></span> hrs</p>
+          </div>
+          </div>
+      </div>
+    </main>
+   
+  
+  
+  
+<script src="index.js"></script>
+  
+</body>
+</html>

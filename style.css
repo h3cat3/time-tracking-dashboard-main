@@ -1,0 +1,229 @@
+:root{
+--Purple600: hsl(246, 80%, 60%);
+--Orange300-work: hsl(15, 100%, 70%);
+--Blue300-play: hsl(195, 74%, 62%);
+--Pink400-study: hsl(348, 100%, 68%);
+--Green400-exercise: hsl(145, 58%, 55%);
+--Purple700-social: hsl(264, 64%, 52%);
+--Yellow300-self-care: hsl(43, 84%, 65%);
+
+--Navy950: hsl(226, 43%, 10%);
+--Navy900: hsl(235, 46%, 20%);
+--Purple500: hsl(235, 45%, 61%);
+--Navy200: hsl(236, 100%, 87%);
+}
+
+
+
+@font-face {
+    font-family: Rubik;
+    src: url(font/Rubik/Rubik-VariableFont_wght.ttf);
+}
+* {
+    font-family: Rubik,sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--Navy950);
+    width: 85%;
+    margin: 2em auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    gap: 1rem;
+    
+}
+.profile{
+    background-color: var(--Purple600);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+}
+.profile img {
+    width: 70px;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+.profile h1{
+    display: flex;
+    flex-direction: column;
+    color: var(--Navy200);
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.3rem;
+}
+.profile span {
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: white;
+}
+.continer-btns{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2rem;
+}
+header{
+    background-color: var(--Navy900);
+    border-radius: 15px;
+}
+
+#daily-btn{
+    color: white;
+}
+button{
+    background: none;
+    color: var(--Purple500);
+    border: none;
+    font-weight: 300;
+}
+
+button:hover{
+    color: white;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.container{
+    background-color: var(--Navy900);
+    border-radius: 15px;
+    padding: 2rem;
+    
+}
+.container:hover{
+    background-color: color-mix(in srgb, var(--Navy900) 70%, var(--Purple500) 30%);
+}
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0.5rem 0;
+}
+.title img:hover{
+    width: 10%;
+    color: white;
+}
+.title h2{
+    color: var(--Navy200);
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+.time{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0.5rem 0;
+    
+}
+.time h3{
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--Navy200);
+}
+.time p{
+    color: var(--Purple500);
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+.work{
+    background: var(--Orange300-work) url(images/icon-work.svg) no-repeat right 1rem top -0.5rem;
+    border-radius: 15px;
+    padding-top: 2rem;
+}
+.play{
+    background: var(--Blue300-play) url(images/icon-play.svg) no-repeat right 1rem top -0.5rem;
+    border-radius: 15px;
+    padding-top: 2rem;
+}
+.study{
+    background: var(--Pink400-study) url(images/icon-study.svg) no-repeat right 1rem top -0.5rem;
+    border-radius: 15px;
+    padding-top: 2rem;
+}
+.exercise{
+    background: var(--Green400-exercise) url(images/icon-exercise.svg) no-repeat right 1rem top -0.5rem;
+    border-radius: 15px;
+    padding-top: 2rem;
+}
+.social{
+    background: var(--Purple700-social) url(images/icon-social.svg) no-repeat right 1rem top -0.5rem;
+    border-radius: 15px;
+    padding-top: 2rem;
+}
+.self-care{
+    background: var(--Yellow300-self-care) url(images/icon-self-care.svg) no-repeat right 1rem top -0.5rem;
+    border-radius: 15px;
+    padding-top: 2rem;
+}
+@media (min-width:768px) {
+    .title img:hover{
+    width: 5%;
+    color: white;
+}
+}
+@media (min-width:1024px) {
+    .title img:hover{
+    width: 25%;
+    color: white;
+}
+   body{
+    flex-direction: row;
+    margin: 10% auto ;
+    padding: 1rem auto;
+    min-height: 50vh;
+    max-height: 60vh;
+   }
+   header{
+    width: 250px;   
+}
+.profile{
+    padding: 3rem 2rem;
+}
+.profile h1{line-height: 2rem;}
+.profile span{
+    font-size: 2.3rem;
+    line-height: 2.5rem;
+}
+   main{
+  display: grid;
+  gap: 1rem;
+}
+.work{grid-row: 1/2;grid-column: 1/2;}
+.play{grid-row: 1/2;grid-column: 2/3;}
+.study{grid-row: 1/2;grid-column: 3/4;}
+.exercise{grid-row: 2/3;grid-column: 1/2;}
+.social{grid-row: 2/3;grid-column: 2/3;}
+.self-care{grid-row: 2/3;grid-column: 3/4;}
+ 
+    .time{
+        flex-direction: column;
+        align-items: start;
+        margin-top: 1rem;
+        gap: 1rem;
+    }
+    .time h3{
+        font-size: 2rem;
+        font-weight: 500;
+    }
+    .continer-btns{
+    flex-direction: column;
+    gap: 1rem;
+    align-items: start;
+}
+.profile{
+
+    flex-direction: column;
+    align-items: start;
+    
+    gap: 2rem;
+}
+}

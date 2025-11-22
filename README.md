@@ -36,8 +36,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: (https://github.com/h3cat3/time-tracking-dashboard-main)
+- Live Site URL: (https://h3cat3.github.io/time-tracking-dashboard-main/)
 
 ## My process
 
